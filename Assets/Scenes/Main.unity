@@ -199,13 +199,14 @@ RectTransform:
   - {fileID: 1322862823}
   - {fileID: 299592365}
   - {fileID: 1322245234}
+  - {fileID: 903848011}
   m_Father: {fileID: 337049619}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00005340576, y: -32.32634}
-  m_SizeDelta: {x: 211.36, y: 428.8292}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -350}
+  m_SizeDelta: {x: 211.36, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &15427395
 GameObject:
@@ -1021,6 +1022,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7527249}
     m_Modifications:
+    - target: {fileID: 782718241399135524, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: Recycling Center
+      objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1064,7 +1070,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 81.4766
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -1109,7 +1115,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -22
+      value: 63.000008
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -1126,15 +1132,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: cost
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 11400000, guid: 236658849311c804a8aa984fc8766a28,
+        type: 2}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 354293687}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: Trash (especially plastic) that is carelessly dumped into the ocean
+        is often nonbiodegradable, and can accumulate to damage the ecosystems and
+        environment of the ocean. For instance, turtles may eat plastic bags, seals
+        can get tangled in plastic fishing nets, and trash can block sunlight from
+        reaching plankton and algae, which may in turn destroy the food web. Fortunately,
+        many forms of trash can be recycled and reused to construct new buildings.
+        Plastics and sand can be reused as bricks. Denim can be recycled for new
+        housing insulation. Used nylon can be renewed to create new carpeting. Plastics
+        can be recycled for new drainage pipes. The trash your citizens throw away
+        will be sent to these recycling centers. You can use recycled trash to build
+        your city.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6356584259796016032, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Name
-      value: Tile Button (2)
+      value: Recycling Center Tile Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 139
       objectReference: {fileID: 0}
     - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00021015476
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852890345791197336, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: 65, Max: 3'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f, type: 3}
@@ -2190,8 +2252,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 327652834}
   m_HandleRect: {fileID: 327652833}
   m_Direction: 2
-  m_Value: 1.000001
-  m_Size: 0.8492259
+  m_Value: 1
+  m_Size: 0.5202355
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3020,7 +3082,7 @@ PrefabInstance:
     - target: {fileID: 782718241399135524, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Text
-      value: Grass Block
+      value: Grass Tile
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -3065,7 +3127,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 81.4766
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -3110,7 +3172,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 163
+      value: 308
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -3127,6 +3189,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 354293687}
     - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Text
@@ -3135,12 +3202,17 @@ PrefabInstance:
     - target: {fileID: 6356584259796016032, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Name
-      value: Tile Button
+      value: Grass Tile Button
       objectReference: {fileID: 0}
     - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00021015476
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852890345791197336, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: 5, Max: 1000'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f, type: 3}
@@ -3528,6 +3600,166 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4c5f449c60e984f4e9b277d7b07f4e71, type: 3}
+--- !u!1001 &903848010
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7527249}
+    m_Modifications:
+    - target: {fileID: 782718241399135524, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: Windmills
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 202.0476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -246
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 11400000, guid: f5844280eca944ea793f2950d9fe523a,
+        type: 2}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 354293687}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: Build windmills to generate clean and renewable energy for your city.
+        As windmills harness the energy of the wind, which ultimately derives from
+        the solar energy that creates atmospheric pressure differences, wind power
+        is renewable. Windmills do not have any CO2 emissions and therefore will
+        not increase the rate of global warming.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6356584259796016032, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Name
+      value: Windmill Tile Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00021015476
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852890345791197336, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: 75, Max: 6'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f, type: 3}
+--- !u!224 &903848011 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+    type: 3}
+  m_PrefabInstance: {fileID: 903848010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &906439152
 GameObject:
   m_ObjectHideFlags: 0
@@ -4758,7 +4990,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9cfe92032e200f148afd3269aa1c060e, type: 2}
   - {fileID: 11400000, guid: ffe2afd810d691043bb96ce54560cbb4, type: 2}
   - {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 735414edcf32e4a2d94a834880f955da, type: 2}
   isEnemy: 1
   originLocation: {x: 0, y: 0, z: 0}
   destinationLocation: {x: 0, y: 0, z: 0}
@@ -4787,6 +5019,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7527249}
     m_Modifications:
+    - target: {fileID: 782718241399135524, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: Solar Panel Home
+      objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4830,7 +5067,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 81.4766
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -4875,7 +5112,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -118
+      value: -108.00001
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -4892,15 +5129,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 11400000, guid: c80ec81d3b705324eb54a48041d33bc1,
+        type: 2}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 354293687}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: Build homes with solar panels on top to generate renewable energy for
+        your city. Solar panels work by converting thermal energy radiated from the
+        sun into electrical energy. While solar panels use photovoltaic cells to
+        do so, ,solar power can also be harnessed through solar heating panels, which
+        provide heated water to homes. As solar panels have zero CO2 emission, the
+        rate of global warming will not increase when this is built.
+      objectReference: {fileID: 0}
     - target: {fileID: 6356584259796016032, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Name
-      value: Tile Button (3)
+      value: Solar Panel Tile Button
       objectReference: {fileID: 0}
     - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00021015476
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852890345791197336, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: 50, Max: 8'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f, type: 3}
@@ -4917,6 +5180,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7527249}
     m_Modifications:
+    - target: {fileID: 782718241399135524, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: Community Center
+      objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4960,7 +5228,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 81.4766
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5005,7 +5273,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 72
+      value: 208
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5022,15 +5290,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: cost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: tile
+      value: 
+      objectReference: {fileID: 11400000, guid: 37940ff5c9bdbe247a0ac146e2b9b259,
+        type: 2}
+    - target: {fileID: 4592378079139259113, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 354293687}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: While building infrastructure that is sustainable for the future is
+        important, it is also important to actively encourage the population to contribute
+        towards fighting against climate change. Use energy to power these community
+        centers, and host community meetings to educate the population on climate
+        change and generate volunteer groups to fix up your city!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6356584259796016032, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Name
-      value: Tile Button (1)
+      value: Community Center Tile Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.00021015476
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852890345791197336, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Cost: 50, Max: 4'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f, type: 3}
@@ -5928,7 +6246,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9cfe92032e200f148afd3269aa1c060e, type: 2}
   - {fileID: 11400000, guid: ffe2afd810d691043bb96ce54560cbb4, type: 2}
   - {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 735414edcf32e4a2d94a834880f955da, type: 2}
   isEnemy: 0
   originLocation: {x: 0, y: 0, z: 0}
   destinationLocation: {x: 0, y: 0, z: 0}
