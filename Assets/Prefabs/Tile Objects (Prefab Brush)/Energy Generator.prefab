@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1322764193983288532}
   - component: {fileID: -1646175127861443363}
   - component: {fileID: 2473623195955629544}
+  - component: {fileID: -7011755816028549708}
   m_Layer: 0
   m_Name: Energy Generator
   m_TagString: Structure
@@ -50,6 +51,7 @@ MonoBehaviour:
   maxAmount: 8
   healAmount: 0
   pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
+  walkTile: {fileID: 0}
   tilemap: {fileID: 0}
   tRenderer: {fileID: 0}
   prefabBrush: {fileID: 11400000, guid: 898d964ba10cd9f46a82b323a3b697ca, type: 2}
@@ -70,3 +72,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energy: {fileID: 0}
   generationSpeed: 2
+--- !u!61 &-7011755816028549708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4463670483519847300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.4}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0

@@ -11,7 +11,7 @@ public class PrefabBrushManager : MonoBehaviour
     
     public Dictionary<string, int> prefabMap = new Dictionary<string, int>();
     public UnityEditor.Tilemaps.PrefabBrush prefabBrush;
-    private string[] prefabs = new string[]{"Chube", "Chubator", "Trash Collector", "Walkable", "Energy Generator", "Windmill"};
+    private string[] prefabs = new string[]{"Chube", "Chubator", "Walkable", "Trash Collector", "Energy Generator", "Windmill"};
 
     void Start()
     {
@@ -31,6 +31,13 @@ public class PrefabBrushManager : MonoBehaviour
 
     public void subtractCount(string prefabname)
     {
+        if (prefabname.Length > 7 && prefabname.Substring(prefabname.Length - 7) == "(Clone)")
+        {
+            prefabname = prefabname.Substring(0, prefabname.Length - 7);
+        }
+
+        print(prefabname);
+        
         prefabMap[prefabname] -= 1;
         //Debug.Log("Walkable count: " + prefabMap["Walkable"]);
     }

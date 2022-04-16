@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
         difficulty = GameObject.Find("Difficulty").GetComponent<Difficulty>();
     }
     
-    void Update()
+    void FixedUpdate()
     {
         shipSpeed = baseShipSpeed * difficulty.difficultyMultiplier;
 
@@ -89,6 +89,9 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
                     destroying = true;
                     StopAllCoroutines();
                     structure = hit.collider.GetComponent<TileManager>();
+                    
+                    structure.CallTileManually();
+                    
                     break;
                 }
             }
@@ -101,7 +104,7 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
     void attack() {
         if (structure != null)
         {
-            structure.damage(structDamage);
+            structure.damage(structDamage * Time.deltaTime);
             if (structure.health <= 0)
             {
                 StopAllCoroutines();

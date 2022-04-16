@@ -17,6 +17,7 @@ public class TileManager : MonoBehaviour
 
     public static float enemyDamage = 0.003f;
     public Tile pollutedTile;
+    public Tile walkTile;
     public Tilemap tilemap;
     public TilemapRenderer tRenderer;
     public UnityEditor.Tilemaps.PrefabBrush prefabBrush;
@@ -60,10 +61,15 @@ public class TileManager : MonoBehaviour
         {
             cascadeDestroy();
         }
+
         if (isPolluted)
-            health -= enemyDamage * Time.deltaTime;
+        {
+            tilemap.SetTile(pos, pollutedTile);
+        }
 
         if (isChube && !colliding && health <= maxHealth) health += healAmount;
+        
+        
     }
 
     public void cascadeDestroy() //called by cascader
@@ -81,11 +87,19 @@ public class TileManager : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy" && gameObject.tag == "Walkable") {
-            tilemap.SetTile(pos, pollutedTile);
-            isPolluted = true;
-            colliding = true;
+            CallTileManually();
         }
     }
+
+    public void CallTileManually() {
+        print("HIT");
+        print(pos);
+        
+        tilemap.SetTile(pos, pollutedTile);
+        isPolluted = true;
+        colliding = true;
+    }
+    
     void OnTriggerStay2D()
     {
         health -= enemyDamage * Time.deltaTime;
