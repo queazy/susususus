@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2473623195955629544}
   m_Layer: 0
   m_Name: Energy Generator
-  m_TagString: Untagged
+  m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,12 +47,14 @@ MonoBehaviour:
   health: 0
   maxHealth: 50
   isChube: 0
-  maxAmount: 2
+  maxAmount: 8
+  healAmount: 0
   pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
   tilemap: {fileID: 0}
   tRenderer: {fileID: 0}
   prefabBrush: {fileID: 11400000, guid: 898d964ba10cd9f46a82b323a3b697ca, type: 2}
   manager: {fileID: 0}
+  tilemapController: {fileID: 0}
 --- !u!114 &2473623195955629544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,4 +68,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 0}
-  generationSpeed: 0.5
+  generationSpeed: 2

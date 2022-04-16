@@ -11,7 +11,7 @@ public class PrefabBrushManager : MonoBehaviour
     
     public Dictionary<string, int> prefabMap = new Dictionary<string, int>();
     public UnityEditor.Tilemaps.PrefabBrush prefabBrush;
-    private string[] prefabs = new string[]{"Chube", "Chubator", "Trash Collector", "Walkable", "Energy Generator", "Portal"};
+    private string[] prefabs = new string[]{"Chube", "Chubator", "Trash Collector", "Walkable", "Energy Generator", "Windmill"};
 
     void Start()
     {
@@ -20,7 +20,9 @@ public class PrefabBrushManager : MonoBehaviour
         }
     }
     public void paint(Tilemap tilemap, GameObject prefab, Vector3Int pos) {
-        prefabBrush.Paint(tilemap, prefab, pos);
+        //prefabBrush.Paint(tilemap, prefab, pos);
+        Vector3 worldPos = tilemap.GetCellCenterWorld(pos);
+        Instantiate(prefab, worldPos, Quaternion.identity);
     }
 
     public void addCount(GameObject prefab) {

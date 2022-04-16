@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ChubatorInvalid
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 68c9f4b2f95202a458a5036bd3fbfe29, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50929552898694cb5b36d0c3d2875bbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

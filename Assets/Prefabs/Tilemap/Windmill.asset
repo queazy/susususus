@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: PortalTile
+  m_Name: Windmill
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: a9ff81c10b91342c0b1279037a3b4109, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f9327893b8084084bfb5c29949450f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

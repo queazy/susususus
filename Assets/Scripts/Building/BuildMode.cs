@@ -16,7 +16,7 @@ public class BuildMode : MonoBehaviour
     public GameObject chubator;
     public GameObject collector;
     public GameObject generator;
-    //public GameObject portal;
+    public GameObject windmill;
 
     [Header("Tiles")]
     public Tile chubeTile;
@@ -25,9 +25,10 @@ public class BuildMode : MonoBehaviour
     public Tile buildProcessTile;
     public Tile pollutedTile;
     public Tile builtTile;
+    public Tile grassTile2;
     public Tile generatorTile;
     public Tile WolfChubatorHighlighted;
-    //public Tile portalTile;
+    public Tile windmillTile;
 
     [Header("Tilemap")]
     public Tilemap tilemap;
@@ -54,7 +55,7 @@ public class BuildMode : MonoBehaviour
         tileToObject.Add(buildProcessTile, normal);
         tileToObject.Add(chubatorTile, chubator);
         tileToObject.Add(trashCollectorTile, collector);
-        //tileToObject.Add(portalTile, portal);
+        tileToObject.Add(windmillTile, windmill);
     }
     void Update()
     {
@@ -84,7 +85,7 @@ public class BuildMode : MonoBehaviour
                     //Debug.Log("position of new tile: " + cellPosition + " | dimensions of tilemap: " + tilemap.cellBounds.size);
                     TilemapController.changeProperties(cellPosition);
                     tilemap.SetTile(cellPosition, buildProcessTile);
-                    StartCoroutine(buildNewTile(tile, cellPosition, controller.buildTime));
+                    StartCoroutine(buildNewTile(tile, cellPosition, 0f));//controller.buildTime));
                 }
             }
             else if (Input.GetMouseButtonDown(0))
@@ -159,13 +160,18 @@ public class BuildMode : MonoBehaviour
 
         if (tilemap.HasTile(pos))
         {
-            prefabManager.paint(tilemap, tileToObject[tile].gameObject, pos);
+            prefabManager.paint(tilemap, tileToObject[tile], pos);
 
-            tilemap.SetTile(pos, tile);
+            if (tile == builtTile)
+            {
+                if (Random.value > 0.5) tilemap.SetTile(pos, builtTile);
+                else tilemap.SetTile(pos, grassTile2);
+            }
+            else tilemap.SetTile(pos, tile);
         }
         else
         {
-            prefabManager.subtractCount(tileToObject[tile].gameObject.name);
+            prefabManager.subtractCount(tileToObject[tile].name);
         }
     }
 }
