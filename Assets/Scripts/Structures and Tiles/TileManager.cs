@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-#if UNITY_EDITOR 
-using UnityEditor.Tilemaps;
-#endif
 using UnityEngine.SceneManagement;
 
 public class TileManager : MonoBehaviour
@@ -20,7 +17,6 @@ public class TileManager : MonoBehaviour
     public Tile walkTile;
     public Tilemap tilemap;
     public TilemapRenderer tRenderer;
-    public UnityEditor.Tilemaps.PrefabBrush prefabBrush;
     public PrefabBrushManager manager;
     public TilemapController tilemapController;
 

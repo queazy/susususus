@@ -34,7 +34,9 @@ public class DragCamera2D : MonoBehaviour
 
     [Header("Camera Bounds")]
     public bool clampCamera = true;
-    public CameraBounds bounds; 
+    public CameraBounds bounds;
+
+    public BuildMode bm;
 
     // private vars
     Vector3 bl;
@@ -73,19 +75,29 @@ public class DragCamera2D : MonoBehaviour
 
     //click and drag
     public void panControl() {
+        if (Input.GetMouseButtonDown(0))
+        {
+            bm.cursor.gameObject.SetActive(false);
+        }
+        else if (Input.GetMouseButtonUp(0)) {
+            bm.cursor.gameObject.SetActive(true);
+        }
 
-       // if mouse is down
-        if (Input.GetMouseButton(1)) {
+        // if mouse is down
+        if (Input.GetMouseButton(0))
+        {
             float x = Input.GetAxis("Mouse X") * dragSpeed;
             float y = Input.GetAxis("Mouse Y") * dragSpeed;
 
-            if (linkedZoomDrag) {
+            if (linkedZoomDrag)
+            {
                 x *= Camera.main.orthographicSize;
                 y *= Camera.main.orthographicSize;
             }
 
             transform.Translate(x, y, 0);
-        }        
+        }
+
     }
 
     private void clampZoom() {

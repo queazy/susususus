@@ -28,8 +28,7 @@ public class BuildModeButton : MonoBehaviour
     {
         if (!transitioning)
         {
-            StartCoroutine(transition(270, speed));
-            setActivity(true);
+            StartCoroutine(transition(270, speed, true));
             on = true;
         }
     }
@@ -38,8 +37,7 @@ public class BuildModeButton : MonoBehaviour
     {
         if (!transitioning)
         {
-            StartCoroutine(transition(550, speed));
-            setActivity(false);
+            StartCoroutine(transition(550, speed, false));
             on = false;
         }
     }
@@ -55,7 +53,7 @@ public class BuildModeButton : MonoBehaviour
         else turnOn();
     }
 
-    IEnumerator transition(int goalX, int speed) {
+    IEnumerator transition(int goalX, int speed, bool on) {
         transitioning = true;
         while (Mathf.Abs(bm.anchoredPosition.x - goalX) > 2f) {
             bm.anchoredPosition = Vector2.Lerp(new Vector2(bm.anchoredPosition.x, bm.anchoredPosition.y), 
@@ -63,6 +61,7 @@ public class BuildModeButton : MonoBehaviour
             yield return null;
         }
         bm.anchoredPosition = new Vector2(goalX, bm.anchoredPosition.y);
+        setActivity(on);
         transitioning = false;
     }
 }

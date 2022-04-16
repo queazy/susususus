@@ -1,9 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-#if UNITY_EDITOR 
-using UnityEditor.Tilemaps;
-#endif
 using UnityEngine.Tilemaps;
 
 public class PrefabBrushManager : MonoBehaviour
