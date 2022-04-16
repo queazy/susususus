@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
                 shipMode = false;
 
                 StopAllCoroutines();
-                StartCoroutine(movementController.Move(transform, transform.position, tilemap.GetCellCenterWorld(chubePos) /*, false, false*/));
+                StartCoroutine(movementController.Move(transform, tilemap.WorldToCell(transform.position), chubePos));
             }            
         }
         else if (!destroying)
@@ -105,7 +105,7 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
             if (structure.health <= 0)
             {
                 StopAllCoroutines();
-                StartCoroutine(movementController.Move(transform, transform.position, tilemap.GetCellCenterWorld(chubePos)));
+                StartCoroutine(movementController.Move(transform, tilemap.WorldToCell(transform.position), chubePos));
             }
         }
     }

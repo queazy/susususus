@@ -24,6 +24,7 @@ public class TileManager : MonoBehaviour
     public TilemapController tilemapController;
 
     private Vector3Int pos;
+    public string name;
 
     private bool isPolluted = false;
     private bool colliding = false;
@@ -67,7 +68,7 @@ public class TileManager : MonoBehaviour
 
     public void cascadeDestroy() //called by cascader
     {
-        manager.subtractCount(gameObject.name);
+        manager.subtractCount(name);
         if (isChube)
         {
             onChubeDeath();

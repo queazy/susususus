@@ -55,6 +55,7 @@ MonoBehaviour:
   prefabBrush: {fileID: 11400000, guid: 898d964ba10cd9f46a82b323a3b697ca, type: 2}
   manager: {fileID: 0}
   tilemapController: {fileID: 0}
+  name: Energy Generator
 --- !u!114 &2473623195955629544
 MonoBehaviour:
   m_ObjectHideFlags: 0

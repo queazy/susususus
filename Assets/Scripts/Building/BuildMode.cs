@@ -102,7 +102,6 @@ public class BuildMode : MonoBehaviour
                             tilename = builtTile.name;
                         if (tilename.Equals(WolfChubatorHighlighted.name))
                             tilename = chubatorTile.name;
-                        materials.amount += (int)(BuildButtonsController.costs[tilename] / 2); //only get half value back
                         tilemap.SetTile(cellPosition, null);
                         StartCoroutine(TilemapController.cascade(cellPosition));
                         /*
