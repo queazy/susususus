@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,14 +15,37 @@ public class TemperatureController : MonoBehaviour
     [Header("Behavior")]
     [SerializeField] private float _startTemp = 1.0f;
     [SerializeField] private float _maxTemp = 4.0f;
-    [SerializeField] private float _rateOfDecay = 0.005f; // temporary
+    [SerializeField] private float _baseRateOfDecay = 0.005f; // temporary
 
+    private float _rateOfDecay;
+    
+    public float Temperature => _currTemp;
+
+    public float Pollution
+    {
+        get
+        {
+            return _pollution;
+        }
+        set
+        {
+            CalcRateOfDecay();
+            _pollution = value;
+        }
+    }
+
+    private float _pollution;
     private float _currTemp;
     private string _degEnd = "°C";
-    
+
+    private void Awake()
+    {
+        _rateOfDecay = _baseRateOfDecay;
+        _currTemp = _startTemp;
+    }
+
     void Start()
     {
-        _currTemp = _startTemp;
         _overlay.UpdateColor(Map());
         _text.text = "+" + _startTemp.ToString("n1") + _degEnd;
     }
@@ -33,7 +58,6 @@ public class TemperatureController : MonoBehaviour
         _overlay.UpdateColor(Map());
         _currTemp += _rateOfDecay * Time.deltaTime;
     }
-
     private string FormatText(float t)
     {
         string pref = (t > 0f) ? "+" : "-";
@@ -45,9 +69,12 @@ public class TemperatureController : MonoBehaviour
         float mapped = Map();
         return _temperatureColors.Evaluate(mapped);
     }
-
     private float Map()
     {
         return Mathf.Clamp01((_currTemp - _startTemp) / (_maxTemp - _startTemp));
+    }
+    private void CalcRateOfDecay()
+    {
+        _rateOfDecay = _baseRateOfDecay + 0.025f * _pollution;
     }
 }

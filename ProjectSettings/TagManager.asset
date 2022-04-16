@@ -12,6 +12,7 @@ TagManager:
   - Structure
   - Materials
   - Walkable
+  - Temperature Controller
   layers:
   - Default
   - TransparentFX

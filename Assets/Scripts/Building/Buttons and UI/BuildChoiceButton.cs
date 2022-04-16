@@ -20,7 +20,8 @@ public class BuildChoiceButton : MonoBehaviour
         BuildButtonsController.costs.Add(tile.name, cost);
     }
 
-    public void switchTile() {
+    public void switchTile()
+    {
         if (buildable)
         {
             controller.currentTile = tile;

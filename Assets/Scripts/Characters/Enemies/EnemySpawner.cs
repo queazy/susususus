@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class EnemySpawner : MonoBehaviour
 {
     public Difficulty difficulty;
+    public TemperatureController temperatureController;
 
     public GameObject prefabEnemy;
     //public GameObject prefabArcherEnemy;
@@ -19,7 +21,8 @@ public class EnemySpawner : MonoBehaviour
 
     void Update()
     {
-        spawnSpeed = 50 / difficulty.difficultyMultiplier;
+        float temperatureMultiplier = evaluateTempMultiplier();
+        spawnSpeed = 50 / difficulty.difficultyMultiplier * temperatureMultiplier;
 
         if (countdown <= 0)
         {
@@ -49,5 +52,10 @@ public class EnemySpawner : MonoBehaviour
             countdown = spawnSpeed;
         }
         countdown -= Time.deltaTime;
+    }
+
+    private float evaluateTempMultiplier()
+    {
+        return Mathf.Log10(temperatureController.Temperature) + 1;
     }
 }

@@ -11,7 +11,7 @@ public class PrefabBrushManager : MonoBehaviour
     
     public Dictionary<string, int> prefabMap = new Dictionary<string, int>();
     public UnityEditor.Tilemaps.PrefabBrush prefabBrush;
-    private string[] prefabs = new string[]{"Chube", "Chubator", "Walkable", "Trash Collector", "Energy Generator", "Windmill"};
+    private string[] prefabs = new string[]{"Chube", "Chubator", "Trash Collector", "Walkable", "Energy Generator", "Windmill", "Coal"};
 
     void Start()
     {

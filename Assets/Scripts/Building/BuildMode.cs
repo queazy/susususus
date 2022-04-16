@@ -17,6 +17,7 @@ public class BuildMode : MonoBehaviour
     public GameObject collector;
     public GameObject generator;
     public GameObject windmill;
+    public GameObject coalGenerator;
 
     [Header("Tiles")]
     public Tile chubeTile;
@@ -29,6 +30,7 @@ public class BuildMode : MonoBehaviour
     public Tile generatorTile;
     public Tile WolfChubatorHighlighted;
     public Tile windmillTile;
+    public Tile coalGeneratorTile;
 
     [Header("Tilemap")]
     public Tilemap tilemap;
@@ -56,6 +58,7 @@ public class BuildMode : MonoBehaviour
         tileToObject.Add(chubatorTile, chubator);
         tileToObject.Add(trashCollectorTile, collector);
         tileToObject.Add(windmillTile, windmill);
+        tileToObject.Add(coalGeneratorTile, coalGenerator);
     }
     void Update()
     {
