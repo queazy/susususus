@@ -30,7 +30,6 @@ public class Troop : MonoBehaviour //TODO: inherit from pathfinder
     {
         if (energy.amount < moveCost) return false;
         if (walkableTiles.Contains(tilemap.GetTile(movePos))) return true;
-        print("invalid: " + tilemap.GetTile(movePos).name);
         return false;
     }
 
