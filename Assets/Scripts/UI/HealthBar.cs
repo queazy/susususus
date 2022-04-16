@@ -24,6 +24,6 @@ public class HealthBar : MonoBehaviour
         current = tile.health;
         slider.value = current;
         transform.localScale = new Vector3(3 / Camera.main.orthographicSize, 3 / Camera.main.orthographicSize);
-        transform.position = Camera.main.WorldToScreenPoint(tile.transform.position) + new Vector3(0, 500/Camera.main.orthographicSize);        
+        transform.position = Camera.main.WorldToScreenPoint(tile.transform.position) + new Vector3(0, 2500/Camera.main.orthographicSize);        
     }
 }
