@@ -29,6 +29,7 @@ public class BuildModeButton : MonoBehaviour
         if (!transitioning)
         {
             StartCoroutine(transition(270, speed));
+            setActivity(true);
             on = true;
         }
     }
@@ -38,6 +39,7 @@ public class BuildModeButton : MonoBehaviour
         if (!transitioning)
         {
             StartCoroutine(transition(550, speed));
+            setActivity(false);
             on = false;
         }
     }
