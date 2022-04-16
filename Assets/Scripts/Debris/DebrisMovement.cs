@@ -14,8 +14,8 @@ public class DebrisMovement : MonoBehaviour
     public SpriteRenderer self;
 
     public float speed = 0.1f;
-    public float rotationSpeed = 1;
-    public int rotationDirection = 1;
+    //public float rotationSpeed = 1;
+    //public int rotationDirection = 1;
 
     private Vector3 target;
     private float perimeter;
@@ -40,7 +40,7 @@ public class DebrisMovement : MonoBehaviour
             setNewPath();
         }
 
-        transform.Rotate(0, 0, rotationSpeed * rotationDirection);
+        //transform.Rotate(0, 0, rotationSpeed * rotationDirection);
     }
 
     void setNewPath()

@@ -74,8 +74,8 @@ public class BuildMode : MonoBehaviour
             {
                 cursor.render.color = Color.green;
 
-                // If it's available and the player clicks the mouse, build a floor tile there
-                if (Input.GetButton("Fire1"))
+                // If it's available and the player right clicks the mouse, build a floor tile there
+                if (Input.GetButton("Fire2"))
                 {
                     // create coroutine of building
                     SFX.playSound(build);
@@ -95,7 +95,7 @@ public class BuildMode : MonoBehaviour
                 {
                     string tilename = tilemap.GetTile(cellPosition).name;
                     if (tilename.Equals(chubeTile.name))
-                        Debug.Log("Don't vape, don't suicide.");
+                        Debug.Log("Yo");
                     else
                     {
                         if (tilename.Equals(buildProcessTile.name) || tilename.Equals(pollutedTile.name))
