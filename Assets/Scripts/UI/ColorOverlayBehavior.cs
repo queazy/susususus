@@ -11,7 +11,7 @@ public class ColorOverlayBehavior : MonoBehaviour
         _overlay.color = _colorGradient.Evaluate(0f);
     }
 
-    public void Update(float t)
+    public void UpdateColor(float t)
     {
         print("ajflajflka");
         float mapped = Mathf.Clamp01(t);

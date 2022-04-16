@@ -113,6 +113,6 @@ public class TileManager : MonoBehaviour
 
 
     private void onChubeDeath() {
-        SceneManager.LoadScene("Death");
+        SceneManager.LoadScene("End Monologue");
     }
 }

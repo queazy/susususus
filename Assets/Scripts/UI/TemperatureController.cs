@@ -21,7 +21,7 @@ public class TemperatureController : MonoBehaviour
     void Start()
     {
         _currTemp = _startTemp;
-        _overlay.Update(Map());
+        _overlay.UpdateColor(Map());
         _text.text = "+" + _startTemp.ToString("n1") + _degEnd;
     }
 
@@ -30,7 +30,7 @@ public class TemperatureController : MonoBehaviour
     {
         _text.color = DeriveColor(_currTemp);
         _text.text = FormatText(_currTemp);
-        _overlay.Update(Map());
+        _overlay.UpdateColor(Map());
         _currTemp += _rateOfDecay * Time.deltaTime;
     }
 
