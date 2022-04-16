@@ -49,14 +49,8 @@ public class TileManager : MonoBehaviour
             if (isChube) {
                 onChubeDeath();
             }
-
-            if (gameObject.name == "Portal")
-            {
-                PortalController.destroyPairedPortals(pos);
-                PortalController.subtractProperties(pos);
-            }
-            else
-                tilemap.SetTile(pos, null);
+            
+            tilemap.SetTile(pos, null);
             tilemapController.coroutine(pos);
             Destroy(gameObject);
             Destroy(this);
@@ -78,13 +72,7 @@ public class TileManager : MonoBehaviour
         {
             onChubeDeath();
         }
-        if (gameObject.name == "Portal")
-        {
-            PortalController.destroyPairedPortals(pos);
-            PortalController.subtractProperties(pos);
-        }
-        else
-            tilemap.SetTile(pos, null);
+        tilemap.SetTile(pos, null);
         Destroy(gameObject);
         Destroy(this);
     }

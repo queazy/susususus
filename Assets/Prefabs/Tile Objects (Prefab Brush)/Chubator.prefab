@@ -48,6 +48,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -98,7 +100,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 20
   isChube: 0
-  maxAmount: 5
+  maxAmount: 4
   healAmount: 0
   pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
   tilemap: {fileID: 1007617699840858494, guid: b7dbaa1c231051d479051f15ab44ccfe, type: 3}
