@@ -54,10 +54,9 @@ MonoBehaviour:
   walkTile: {fileID: 0}
   tilemap: {fileID: 0}
   tRenderer: {fileID: 0}
-  prefabBrush: {fileID: 11400000, guid: 898d964ba10cd9f46a82b323a3b697ca, type: 2}
   manager: {fileID: 0}
   tilemapController: {fileID: 0}
-  name: Coal Generator
+  name: Coal
 --- !u!114 &-6372318040183685873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energy: {fileID: 0}
+  temperatureController: {fileID: 0}
   generationSpeed: 2
 --- !u!61 &6485335319961105850
 BoxCollider2D:
