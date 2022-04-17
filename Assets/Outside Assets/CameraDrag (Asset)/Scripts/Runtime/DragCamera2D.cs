@@ -71,7 +71,7 @@ public class DragCamera2D : MonoBehaviour
             cb.guiColour = new Color(0,0,1f,0.1f);
             cb.pointa = new Vector3(20,20,0);
             this.bounds = cb;
-            EditorUtility.SetDirty(this);
+            //EditorUtility.SetDirty(this);
         }
     }
 

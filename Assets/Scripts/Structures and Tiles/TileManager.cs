@@ -21,7 +21,6 @@ public class TileManager : MonoBehaviour
     public TilemapController tilemapController;
 
     private Vector3Int pos;
-    public string name;
 
     public float renderDecayThreshold = 0.75f;
 
@@ -69,7 +68,7 @@ public class TileManager : MonoBehaviour
 
     public void cascadeDestroy() //called by cascader
     {
-        manager.subtractCount(name);
+        manager.subtractCount(gameObject.name);
         if (isChube)
         {
             onChubeDeath();
