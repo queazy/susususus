@@ -50,13 +50,15 @@ MonoBehaviour:
   isChube: 0
   maxAmount: 10
   healAmount: 0
-  pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
+  pollutedTile: {fileID: 11400000, guid: a1f4c95e3b54230499d2006543d9c447, type: 2}
   tile: {fileID: 11400000, guid: 295e83f510517f54d8304667ab21f7a2, type: 2}
   tilemap: {fileID: 0}
   tRenderer: {fileID: 0}
   manager: {fileID: 0}
   tilemapController: {fileID: 0}
   name: Coal
+  renderDecayThreshold: 0.75
+  isPolluted: 0
 --- !u!114 &-6372318040183685873
 MonoBehaviour:
   m_ObjectHideFlags: 0
