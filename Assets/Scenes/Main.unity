@@ -1841,8 +1841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8a3afafc1c4c4458478fe10d5de760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficultyMultiplier: 1
-  addDifficultyEvery: 45
+  difficultyMultiplier: 3
+  addDifficultyEvery: 15
 --- !u!4 &368265743
 Transform:
   m_ObjectHideFlags: 0
@@ -4070,7 +4070,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select a tile and RIGHT CLICK on the map to build it.
+  m_Text: 'Select a tile and RIGHT CLICK on the map to build it.
+
+    SHIFT + CLICK
+    to remove a tile.'
 --- !u!222 &938979879
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4606,7 +4609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 967, y: 352}
+  m_AnchoredPosition: {x: 933, y: 352}
   m_SizeDelta: {x: 105.5994, y: 33.8858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146220742
@@ -5199,10 +5202,24 @@ MonoBehaviour:
   tilemap: {fileID: 1015716841}
   chube: {fileID: 11400000, guid: 878b155406d28514eb8965ea2fc16c54, type: 2}
   walkableTiles:
-  - {fileID: 11400000, guid: 9cfe92032e200f148afd3269aa1c060e, type: 2}
   - {fileID: 11400000, guid: ffe2afd810d691043bb96ce54560cbb4, type: 2}
-  - {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
+  - {fileID: 11400000, guid: 37940ff5c9bdbe247a0ac146e2b9b259, type: 2}
+  - {fileID: 11400000, guid: 9738a1a2d126a94479514f3c1e72b6fc, type: 2}
+  - {fileID: 11400000, guid: bf3d56cd2e2067742926a0706fb0fac5, type: 2}
+  - {fileID: 11400000, guid: 6c83e63824dd50a4ab5ca11ceb338650, type: 2}
+  - {fileID: 11400000, guid: 878b155406d28514eb8965ea2fc16c54, type: 2}
+  - {fileID: 11400000, guid: 295e83f510517f54d8304667ab21f7a2, type: 2}
+  - {fileID: 11400000, guid: a1f4c95e3b54230499d2006543d9c447, type: 2}
+  - {fileID: 11400000, guid: c80ec81d3b705324eb54a48041d33bc1, type: 2}
   - {fileID: 11400000, guid: 735414edcf32e4a2d94a834880f955da, type: 2}
+  - {fileID: 11400000, guid: a958f84e7774e844a8977e1d070581bc, type: 2}
+  - {fileID: 11400000, guid: 719c6775707a1ef45b64c529e7706226, type: 2}
+  - {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
+  - {fileID: 11400000, guid: 3bd2730be901b2a46b9334b0a005c8a0, type: 2}
+  - {fileID: 11400000, guid: 02ab6544d2a30b3459206d3c4968839c, type: 2}
+  - {fileID: 11400000, guid: e68e024c311307c40acbb3fd7ab6f929, type: 2}
+  - {fileID: 11400000, guid: 236658849311c804a8aa984fc8766a28, type: 2}
+  - {fileID: 11400000, guid: f5844280eca944ea793f2950d9fe523a, type: 2}
   isEnemy: 1
   originLocation: {x: 0, y: 0, z: 0}
   destinationLocation: {x: 0, y: 0, z: 0}
@@ -7118,7 +7135,7 @@ PrefabInstance:
     - target: {fileID: 4114788697151822090, guid: 4d05b7c6379ce334fbb002c7ecd3f267,
         type: 3}
       propertyPath: amount
-      value: 1000
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4114788697151822091, guid: 4d05b7c6379ce334fbb002c7ecd3f267,
         type: 3}
@@ -7301,6 +7318,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 86.553925
       objectReference: {fileID: 0}
+    - target: {fileID: 5441619163080686633, guid: d84b3f087c32bf044b60f1da53c23855,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -88
+      objectReference: {fileID: 0}
     - target: {fileID: 6312006877123683225, guid: d84b3f087c32bf044b60f1da53c23855,
         type: 3}
       propertyPath: _canvas
@@ -7356,7 +7378,7 @@ PrefabInstance:
     - target: {fileID: 9519030560525337, guid: 1183b0a0042b3ff4b8431cf75f65191c, type: 3}
       propertyPath: pollutedTile
       value: 
-      objectReference: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556,
+      objectReference: {fileID: 11400000, guid: a958f84e7774e844a8977e1d070581bc,
         type: 2}
     - target: {fileID: 976061545445217351, guid: 1183b0a0042b3ff4b8431cf75f65191c,
         type: 3}
