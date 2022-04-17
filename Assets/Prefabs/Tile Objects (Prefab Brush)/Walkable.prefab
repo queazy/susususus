@@ -102,9 +102,9 @@ MonoBehaviour:
   maxAmount: 1000
   healAmount: 0
   pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
+  tile: {fileID: 11400000, guid: ffe2afd810d691043bb96ce54560cbb4, type: 2}
   tilemap: {fileID: 1007617699840858494, guid: b7dbaa1c231051d479051f15ab44ccfe, type: 3}
   tRenderer: {fileID: 0}
-  prefabBrush: {fileID: 11400000, guid: 898d964ba10cd9f46a82b323a3b697ca, type: 2}
   manager: {fileID: 0}
   tilemapController: {fileID: 0}
   name: Walkable
@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,5 +132,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0

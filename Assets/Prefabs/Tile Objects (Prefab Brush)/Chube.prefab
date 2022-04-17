@@ -102,9 +102,9 @@ MonoBehaviour:
   maxAmount: 1
   healAmount: 0
   pollutedTile: {fileID: 0}
+  tile: {fileID: 11400000, guid: 878b155406d28514eb8965ea2fc16c54, type: 2}
   tilemap: {fileID: 1007617699840858494, guid: b7dbaa1c231051d479051f15ab44ccfe, type: 3}
   tRenderer: {fileID: 0}
-  prefabBrush: {fileID: 11400000, guid: 898d964ba10cd9f46a82b323a3b697ca, type: 2}
   manager: {fileID: 0}
   tilemapController: {fileID: 0}
   name: Chube

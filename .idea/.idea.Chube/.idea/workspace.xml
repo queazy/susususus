@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="402f50d6-a556-4cd3-b1ab-1a212f085973" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Normal Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Normal Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Building/PrefabBrushManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Building/PrefabBrushManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chube/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chube/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Troops/Wolf.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Troops/Wolf.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Chubator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Chubator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Chube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Chube.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Coal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Coal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Energy Generator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Energy Generator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Trash Collector.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Trash Collector.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Walkable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Walkable.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Windmill.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile Objects (Prefab Brush)/Windmill.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Structures and Tiles/TileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Structures and Tiles/TileManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -67,7 +74,9 @@
       <option name="presentableId" value="Default" />
       <updated>1650085315328</updated>
       <workItem from="1650085321703" duration="3045000" />
-      <workItem from="1650131343738" duration="2302000" />
+      <workItem from="1650131343738" duration="5037000" />
+      <workItem from="1650148583275" duration="183000" />
+      <workItem from="1650148794005" duration="4713000" />
     </task>
     <servers />
   </component>

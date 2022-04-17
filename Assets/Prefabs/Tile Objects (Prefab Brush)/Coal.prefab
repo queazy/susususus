@@ -51,7 +51,7 @@ MonoBehaviour:
   maxAmount: 10
   healAmount: 0
   pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
-  walkTile: {fileID: 0}
+  tile: {fileID: 11400000, guid: 295e83f510517f54d8304667ab21f7a2, type: 2}
   tilemap: {fileID: 0}
   tRenderer: {fileID: 0}
   manager: {fileID: 0}

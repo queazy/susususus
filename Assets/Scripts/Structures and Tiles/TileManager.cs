@@ -14,7 +14,7 @@ public class TileManager : MonoBehaviour
 
     public static float enemyDamage = 0.003f;
     public Tile pollutedTile;
-    public Tile walkTile;
+    public Tile tile;
     public Tilemap tilemap;
     public TilemapRenderer tRenderer;
     public PrefabBrushManager manager;
@@ -23,7 +23,7 @@ public class TileManager : MonoBehaviour
     private Vector3Int pos;
     public string name;
 
-    private bool isPolluted = false;
+    public bool isPolluted = false;
     private bool colliding = false;
 
     void Start()
@@ -42,12 +42,14 @@ public class TileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0) {
+        if (health <= 0)
+        {
             manager.subtractCount(gameObject.name);
-            if (isChube) {
+            if (isChube)
+            {
                 onChubeDeath();
             }
-            
+
             tilemap.SetTile(pos, null);
             tilemapController.coroutine(pos);
             Destroy(gameObject);
@@ -63,9 +65,14 @@ public class TileManager : MonoBehaviour
             tilemap.SetTile(pos, pollutedTile);
         }
 
+        if (!isPolluted)
+        {
+            tilemap.SetTile(pos, tile);
+        }
+
         if (isChube && !colliding && health <= maxHealth) health += healAmount;
-        
-        
+
+
     }
 
     public void cascadeDestroy() //called by cascader
@@ -113,5 +120,16 @@ public class TileManager : MonoBehaviour
 
     private void onChubeDeath() {
         SceneManager.LoadScene("End Monologue");
+    }
+
+    // TODO: convert to a get/set field/property thing
+    public void UpdateHealth(float increment)
+    {
+        health += increment;
+    }
+    
+    public void UpdatePollutionStatus(bool status)
+    {
+        isPolluted = status;
     }
 }
