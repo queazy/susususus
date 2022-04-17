@@ -50,13 +50,15 @@ MonoBehaviour:
   isChube: 0
   maxAmount: 6
   healAmount: 0
-  pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
+  pollutedTile: {fileID: 11400000, guid: 719c6775707a1ef45b64c529e7706226, type: 2}
   tile: {fileID: 11400000, guid: f5844280eca944ea793f2950d9fe523a, type: 2}
   tilemap: {fileID: 0}
   tRenderer: {fileID: 0}
   manager: {fileID: 0}
   tilemapController: {fileID: 0}
   name: Windmill
+  renderDecayThreshold: 0.75
+  isPolluted: 0
 --- !u!114 &1290255329377535236
 MonoBehaviour:
   m_ObjectHideFlags: 0

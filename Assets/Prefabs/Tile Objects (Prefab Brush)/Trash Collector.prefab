@@ -50,13 +50,15 @@ MonoBehaviour:
   isChube: 0
   maxAmount: 3
   healAmount: 0
-  pollutedTile: {fileID: 11400000, guid: ceec1100d3e243d4f80e05cee459f556, type: 2}
+  pollutedTile: {fileID: 11400000, guid: 02ab6544d2a30b3459206d3c4968839c, type: 2}
   tile: {fileID: 11400000, guid: 236658849311c804a8aa984fc8766a28, type: 2}
   tilemap: {fileID: 0}
   tRenderer: {fileID: 0}
   manager: {fileID: 0}
   tilemapController: {fileID: 0}
   name: 
+  renderDecayThreshold: 0.75
+  isPolluted: 0
 --- !u!61 &4624501004043106214
 BoxCollider2D:
   m_ObjectHideFlags: 0

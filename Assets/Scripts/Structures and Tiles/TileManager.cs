@@ -23,6 +23,8 @@ public class TileManager : MonoBehaviour
     private Vector3Int pos;
     public string name;
 
+    public float renderDecayThreshold = 0.75f;
+
     public bool isPolluted = false;
     private bool colliding = false;
 
@@ -60,19 +62,9 @@ public class TileManager : MonoBehaviour
             cascadeDestroy();
         }
 
-        if (isPolluted)
-        {
-            tilemap.SetTile(pos, pollutedTile);
-        }
-
-        if (!isPolluted)
-        {
-            tilemap.SetTile(pos, tile);
-        }
+        tilemap.SetTile(pos, (health < renderDecayThreshold * maxHealth) ? pollutedTile : tile);
 
         if (isChube && !colliding && health <= maxHealth) health += healAmount;
-
-
     }
 
     public void cascadeDestroy() //called by cascader
