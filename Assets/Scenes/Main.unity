@@ -205,8 +205,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -400}
-  m_SizeDelta: {x: 211.36, y: 800}
+  m_AnchoredPosition: {x: 0, y: -425}
+  m_SizeDelta: {x: 211.36, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &15427395
 GameObject:
@@ -1311,7 +1311,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -410
+      value: -470
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -2476,7 +2476,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 327652833}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.4300627
+  m_Size: 0.40476492
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3913,7 +3913,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -720
+      value: -780
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5340,7 +5340,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -585
+      value: -645
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5482,7 +5482,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5527,7 +5527,7 @@ PrefabInstance:
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -250
+      value: -280
       objectReference: {fileID: 0}
     - target: {fileID: 2712033350535459730, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5583,11 +5583,18 @@ PrefabInstance:
     - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_Text
-      value: While building infrastructure that is sustainable for the future is
+      value: 'While building infrastructure that is sustainable for the future is
         important, it is also important to actively encourage the population to contribute
         towards fighting against climate change. Use energy to power these community
         centers, and host community meetings to educate the population on climate
         change and generate volunteer groups to fix up your city!
+
+
+        Note
+        that new construction volunteers require energy to power their vehicles and
+        tools. Use energy to move these workers into decaying regions to stop the
+        natural disaster and fix up the buildings. Prioritize renewable energy generation
+        to slow down global warming and climate change.'
       objectReference: {fileID: 0}
     - target: {fileID: 6205733473204295025, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5612,7 +5619,7 @@ PrefabInstance:
     - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 110
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -5622,7 +5629,7 @@ PrefabInstance:
     - target: {fileID: 8630327019726021069, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -73
+      value: -83
       objectReference: {fileID: 0}
     - target: {fileID: 8852890345791197336, guid: 9c49730df2b5e014a9a3ff8e28fbbe4f,
         type: 3}
@@ -7337,6 +7344,15 @@ PrefabInstance:
         type: 3}
       propertyPath: _shakeDelay
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6312006877123683225, guid: d84b3f087c32bf044b60f1da53c23855,
+        type: 3}
+      propertyPath: _displayText
+      value: Warning -- the higher your global temperature, the more likely catastrophic
+        natural disasters like hurricanes will occur! Hurricanes will spread widespread
+        decay and destruction throughout your city. Move construction workers into
+        the regions with decay to stop the natural disaster and fix up the buildings.
+        Prioritize renewable energy to slow down global warming.
       objectReference: {fileID: 0}
     - target: {fileID: 8245714584186926965, guid: d84b3f087c32bf044b60f1da53c23855,
         type: 3}
