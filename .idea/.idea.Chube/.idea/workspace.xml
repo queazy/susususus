@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="402f50d6-a556-4cd3-b1ab-1a212f085973" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Chube/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chube/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Structures and Tiles/TileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Structures and Tiles/TileManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Normal Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Enemies/Normal Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Enemies/Enemy.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,7 @@
       <workItem from="1650148583275" duration="183000" />
       <workItem from="1650148794005" duration="4857000" />
       <workItem from="1650158247169" duration="942000" />
+      <workItem from="1650164231228" duration="713000" />
     </task>
     <servers />
   </component>

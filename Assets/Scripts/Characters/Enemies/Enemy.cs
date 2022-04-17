@@ -74,16 +74,13 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
             foreach (Vector2 dir in directions)
             {
                 // Bit shift the index of the layer (8) to get a bit mask
-                int layerMask = 1 << 8;
-
-                // This would cast rays only against colliders in layer 8, so we just inverse the mask.
-                layerMask = ~layerMask;
+                int layerMask = 1;
 
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 3, layerMask);
 
                 Debug.DrawRay(transform.position, new Vector3(dir.x, dir.y, 0), Color.yellow);
 
-                if (hit && hit.collider.tag == "Structure")
+                if (hit && (hit.collider.gameObject.tag == "Structure" || hit.collider.gameObject.tag == "Walkable"))
                 {
                     Debug.Log("Raycast hit a structure! Destroying structure...");
                     destroying = true;
@@ -99,6 +96,8 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
         else {
             attack();
         }
+        
+        //print(destroying);
     }
 
     void attack() {
@@ -109,6 +108,8 @@ public class Enemy : MonoBehaviour //TODO: inherit from pathfinder
             {
                 StopAllCoroutines();
                 StartCoroutine(movementController.Move(transform, tilemap.WorldToCell(transform.position), chubePos));
+
+                destroying = false;
             }
         }
     }

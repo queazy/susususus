@@ -245,7 +245,7 @@ MonoBehaviour:
   movementController: {fileID: 0}
   difficulty: {fileID: 0}
   attackrange: 2
-  structDamage: 0.05
+  structDamage: 1
   baseShipSpeed: 0.5
   shipSpeed: 0
 --- !u!61 &2057929957895858635
