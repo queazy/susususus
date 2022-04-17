@@ -10,7 +10,6 @@ public class BuildModeButton : MonoBehaviour
     public bool transitioning;
     public int speed;
 
-    public GameObject BuildMode;
     public GameObject BuildCursor;
     public GameObject BuildMenu;
 
@@ -28,8 +27,8 @@ public class BuildModeButton : MonoBehaviour
     {
         if (!transitioning)
         {
-            StartCoroutine(transition(270, speed, true));
             on = true;
+            StartCoroutine(transition(270, speed));
         }
     }
 
@@ -37,8 +36,8 @@ public class BuildModeButton : MonoBehaviour
     {
         if (!transitioning)
         {
-            StartCoroutine(transition(550, speed, false));
             on = false;
+            StartCoroutine(transition(550, speed));
         }
     }
 
@@ -53,7 +52,7 @@ public class BuildModeButton : MonoBehaviour
         else turnOn();
     }
 
-    IEnumerator transition(int goalX, int speed, bool on) {
+    IEnumerator transition(int goalX, int speed) {
         transitioning = true;
         while (Mathf.Abs(bm.anchoredPosition.x - goalX) > 2f) {
             bm.anchoredPosition = Vector2.Lerp(new Vector2(bm.anchoredPosition.x, bm.anchoredPosition.y), 

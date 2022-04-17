@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 // NOTE: This is an asset that I edited
 public class DragCamera2D : MonoBehaviour
@@ -36,6 +37,7 @@ public class DragCamera2D : MonoBehaviour
     public bool clampCamera = true;
     public CameraBounds bounds;
 
+    public BuildModeButton bmb;
     public BuildMode bm;
 
     // private vars
@@ -75,12 +77,21 @@ public class DragCamera2D : MonoBehaviour
 
     //click and drag
     public void panControl() {
-        if (Input.GetMouseButtonDown(0))
+        if (IsPointerOverUIObject())
         {
-            bm.cursor.gameObject.SetActive(false);
+            return;
         }
-        else if (Input.GetMouseButtonUp(0)) {
-            bm.cursor.gameObject.SetActive(true);
+        if (bmb.on)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                bm.cursor.gameObject.SetActive(false);
+                
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                bm.cursor.gameObject.SetActive(true);
+            }
         }
 
         // if mouse is down
@@ -99,7 +110,14 @@ public class DragCamera2D : MonoBehaviour
         }
 
     }
-
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
+    }
     private void clampZoom() {
         Camera.main.orthographicSize =  Mathf.Clamp(Camera.main.orthographicSize, minZoom, maxZoom);
         Mathf.Max(cam.orthographicSize, 0.1f);

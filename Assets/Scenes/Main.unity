@@ -358,7 +358,6 @@ MonoBehaviour:
   on: 0
   transitioning: 0
   speed: 5
-  BuildMode: {fileID: 62749669}
   BuildCursor: {fileID: 1886996968}
   BuildMenu: {fileID: 354293683}
   button: {fileID: 15427397}
@@ -1183,7 +1182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3964321, g: 0.6886792, b: 0.34174082, a: 1}
+  m_Color: {r: 0.7284131, g: 0.9811321, b: 0.6812389, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2139,16 +2138,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389627795}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 559053417}
-  m_RootOrder: 0
+  m_Father: {fileID: 562924340}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 0}
+  m_AnchoredPosition: {x: 0.000015259, y: -176.55}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &389627797
@@ -2739,7 +2738,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420034}
   - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Camera
@@ -2841,63 +2839,8 @@ MonoBehaviour:
   zoomToMouse: 0
   clampCamera: 1
   bounds: {fileID: 1537388176}
+  bmb: {fileID: 15427400}
   bm: {fileID: 62749670}
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b0ba117f9d8e6a4a8a2aaca7154c935, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectClick: 1
-  waveCount: 3
-  timeInfinity: 0
-  waveTime: 2
-  waveAnimCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.219
-      value: 0.529
-      inSlope: -2.1942995
-      outSlope: -2.1942995
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  waveInternalRadio: 0.4
-  waveExternalRadio: 0.07
-  waveScale: 3
-  waveSpeed: 0.34
-  waveFrequency: 2.6
-  circleXScale: 1
-  circleYScale: 1
 --- !u!1 &521641532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,14 +2980,13 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 389627796}
+  m_Children: []
   m_Father: {fileID: 562924340}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: -176.55}
+  m_AnchoredPosition: {x: -0, y: -176.55}
   m_SizeDelta: {x: 126.9, y: 58.8935}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559053418
@@ -3091,20 +3033,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 562924339}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -3183,9 +3113,10 @@ RectTransform:
   m_Children:
   - {fileID: 790118452}
   - {fileID: 1239879074}
-  - {fileID: 559053417}
+  - {fileID: 389627796}
   - {fileID: 1796916041}
   - {fileID: 414579917}
+  - {fileID: 559053417}
   m_Father: {fileID: 1818595289}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4452,7 +4383,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b6e0a964d722547d8966e3345233f289, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9731963, b: 0.93018866, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4554,7 +4485,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -8313127194736851179, guid: 0f088da0d6202e24a80a4863fd8634d4,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 4d76aba2d4aac704f838b893455bf9ab, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2cc5e6a90cb4eec4bb3bff31fa89ca88, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.22
   m_Pitch: 1

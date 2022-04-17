@@ -43,6 +43,6 @@ public class ParagraphScroll : MonoBehaviour
 
     private void Warp()
     {
-        SceneManager.LoadScene("Death");
+        SceneManager.LoadScene("Menu");
     }
 }
